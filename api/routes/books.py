@@ -33,10 +33,11 @@ db.books = {
 }
 
 
-@router.get("/abc", status_code=status.HTTP_200_OK)
+@router.get("/cba", status_code=status.HTTP_200_OK)
 async def test_health() -> JSONResponse:
     return JSONResponse(
-        status_code=status.HTTP_200_OK, content={"message": "Automatically deployed!!!"}
+        status_code=status.HTTP_200_OK,
+        content={"message": "Automatically deployed again nnnnn!!!"},
     )
 
 
